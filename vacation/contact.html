@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>World Wanders: Home</title>
+        <link rel="stylesheet" href="travel.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content="World Wanders">
+        <meta name="author" content="Abbi Hales">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <img src="images/iconn.jpg" alt="site logo" width="100" height="100">
+            <div> 
+                <h1>World Wanders</h1>
+                <p>Let's Chat</p>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+                <li><a href="package.html">Travel Packages</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h1>Chat with Us!</h1>
+            <form method="post" class="myForm" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fname">First and Last Name*</label>
+                    <input type="text" id="fname" name="fname" required>
+                    
+                    <label for="phone">Cell Number*</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="987-555-1234">
+                    
+                    <label for="gmail">Email*</label>
+                    <input type="email" id="gmail" name="gmail" required placeholder="jarry@gmail.com">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Contact Options</legend>
+                    <label for="email_method">
+                        <input type="radio" id="email_method" name="method" value="email">Email
+                    </label>
+                    <label for="text_method">
+                        <input type="radio" id="text_method" name="method" value="text">Text
+                    </label>
+                    <label for="phone_method">
+                        <input type="radio" id="phone_method" name="method" value="phone">Phone Call
+                    </label>
+                </fieldset>
+                
+                <label for="time">Reason for Contact</label>
+                <select id="time" name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Special Travel Location</option>
+                    <option value="noon">Hotels are Booked</option>
+                    <option value="afternoon">Special Accommodations</option>
+                    <option value="evening">Other</option>
+                </select>
+
+                <label for="comments">Questions or Comments</label>
+                <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+                <fieldset>
+                    <legend>Our Information</legend>
+                    <h3>Phone</h3>
+                    <p>932-442-0499</p>
+                    <h3>Email Address</h3>
+                    <p>worldwonders@gmail.com</p>
+                </fieldset>        
+
+                <input type="submit" value="CONTACT">
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 &bull; World Wanders &bull; <a href="mailto:abbihales@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
+
